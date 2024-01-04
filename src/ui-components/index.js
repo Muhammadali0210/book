@@ -1,43 +1,20 @@
-import Input from './Input.vue'
-import Logo from './Logo.vue'
-import Textarea from './Textarea.vue'
-import PrimaryButton from './PrimaryButton.vue'
-import SecondaryButton from './SecondaryButton.vue'
-import TertiaryButton from './TertiaryButton.vue'
-import StateButton from './StateButton.vue'
-import Toggle from './Toggle.vue'
-import Check from './Check.vue'
-import FormCheck from './FormCheck.vue'
-import InputPasswoed from './InputPassword.vue'
-import DataNotFound from './DataNotFound.vue'
-import RouterLinkBar from './RouterLinkBar.vue'
-import ProductItem from './ProductItem.vue'
-import StarEvaluation from './StarEvaluation.vue'
-import StarResult from './StarResult.vue'
-import AddButton from './AddButton.vue'
-import RemoveButton from './RemoveButton.vue'
-import InputReview from './InputReview.vue'
-import Comment from './Comment.vue'
+import RegistrationInput from './RegistrationInput.vue'
+import RegistrationButton from './RegistrationButton.vue'
+import RegistrationSelect from './RegistrationSelect.vue'
+import RegistrationTextarea from './RegistrationTextarea.vue'
+import AuthorItem from './AuthorItem.vue'
+import BookItem from './BookItem.vue'
+import ProfileInput from './ProfileInput.vue'
+import SaveButton from './SaveButton.vue'
 
 export default[
-    Input,
-    InputReview,
-    Logo,
-    Textarea,
-    PrimaryButton,
-    SecondaryButton,
-    TertiaryButton,
-    StateButton,
-    Toggle,
-    Check,
-    InputPasswoed,
-    FormCheck,
-    DataNotFound,
-    RouterLinkBar,
-    ProductItem,
-    StarEvaluation,
-    StarResult,
-    AddButton,
-    RemoveButton,
-    Comment
+    RegistrationInput,
+    RegistrationButton,
+    RegistrationSelect,
+    RegistrationTextarea,
+    AuthorItem,
+    BookItem,
+    ProfileInput,
+    SaveButton
+    
 ]

@@ -1,46 +1,61 @@
-:root {
-  --black: #100D22;
-  --secondary: rgba(171, 35, 143, 1), rgba(223, 50, 149, 1), rgba(254, 157, 155, 1), rgba(255, 119, 112, 1);
-  --green-succes: #00C566;
-  --red-error: #FF4747;
-  --red-remove: #FF7770;
-  --yellow-warning: #FACC15;
-  --yellow: #FFC107;
-  --white: #ffffff;
-  --grey-fd: #Fdfdfd;
-  --grey-f6: #F6F6F6;
-  --grey-e6: #e6e6e6;
-  --grey-ed: #EDF2F7;
-  --grey-e3: #E3E9ED;
-  --grey-d1: #D1D8DD;
-  --grey-bf: #BFC6CC;
-  --grey-9c: #9CA4AB;
-  --grey-87: #878690;
-  --grey-66: #66707A;
-  --grey-43: #434E58;
-  --grey-1f: #1F2C37;
-  --grey-c4: #C4C4C4;
-  --grey-e8: #E8E8E8;
+[theme="dark"] {
+  --homeBg: #191919;
+  --itemBg: #000;
+  --grey: #1E1E1E;
+  --searchInput: #40403F;
+  --searchButtonText: #41270C;
+  --activBar: #F2F6F7;
+  --passivBar: #252525;
+  --passivbarNumberBlock: #25252500;
+  --activebarNumberBlock: #000;
+  --activeNumber: #fff;
+  --passivNumber: #ffffff;
+  --saveButton: #F1F6FD;
+  --fileBlock: #1B1B1B;
+  --fileItem: #4D4D4C;
+  --itemTitle: #c9ac8c;
+  --itemLabel: #A5A5A3;
+  --description: #D1D1CF;
+  --profilTitle: #DEDEDC;
+  --profilText: #F2F6F7;
+  --profileLabel: #C6CACA;
+  --profileInputText: #000000;
+  --whiteBlack: #ffffff;
+  --blackWhite: #000;
+  --fileText: #828281;
+  --barText: #A3A3A1;
+}
+[theme="lite"] {
+  --homeBg: #FFFFFC;
+  --itemBg: #F5F5F2;
+  --grey: #F5F5F2;
+  --searchInput: #F5F5F2;
+  --searchButtonText: #F4DABD;
+  --activBar: #DCE6F4;
+  --passivBar: #F7F9F9;
+  --passivbarNumberBlock: #EEF2F2;
+  --activebarNumberBlock: #132543;
+  --activeNumber: #fff;
+  --passivNumber: #78C1FF;
+  --saveButton: #132543;
+  --fileBlock: #F4F4F1;
+  --fileItem: #F8F8F5;
+  --itemTitle: #000;
+  --itemLabel: #626261;
+  --description: #3D3D3C;
+  --profilTitle: #212121;
+  --profilText: #464E60;
+  --profileLabel: #C6C4CD;
+  --profileInputText: #464E60;
+  --whiteBlack: #000;
+  --blackWhite: #fff;
+  --fileText: #AEAEAC;
+  --barText: #90949E;
 }
 
-.text-black{
-  color: var(--black);
-}
-.text-secondary{
-  background-color: var(--red-error);
-  background-image: linear-gradient(179deg, var(--secondary));
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.text-grey{
-  color: var(--grey-87);
-}
-.text-white{
-  color: var(--white);
-}
-.text-green{
-  color: var(--green-succes);
+.box{
+  background-color: var(--searchButton);
+  width: 100px;
+  height: 100px;
+  color: var(--itemTitle);
 }

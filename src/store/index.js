@@ -1,226 +1,169 @@
 import { createStore } from 'vuex'
 
 const store = createStore({
-  state () {
+  state() {
     return {
-      count: 5,
-      product: [
-        {
-          "id": 1,
-          "type": "Road Racing Shoes",
-          "name": "Nike ZoomX Streakfly 1",
-          "description": "Our lightest racing shoe, the Nike ZoomX Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race.",
-          "image": [
-            {
-              "id": 1,
-              "img": "../src/images/shoes1.png"
-            },
-            {
-              "id": 2,
-              "img": "../src/images/shoes2.png"
-            },
-            {
-              "id": 3,
-              "img": "../src/images/shoes3.png"
-            },
-            {
-              "id": 4,
-              "img": "../src/images/shoes4.png"
-            },
-          ],
-          "cost": 213,
-          "size": [38, 40, 42, 44],
-          "model": ["small", "large"],
-          "add_bag": false,
-          "add_wishlist": false,
-          "reviwes": 13, 
-          "sky_rate_result": 2.5,
-          "coments": [
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Ralph Edwards",
-              "date": "2/10/22",
-              "userimage":"",
-              "sky_rate": 5
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "John Edwards",
-              "date": "8/6/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Julia Edwards",
-              "date": "3/1/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Ajoyib mahsulot sizlarga ham maslahat beraman. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Macs Edwards",
-              "date": "9/12/22",
-              "userimage":"",
-              "sky_rate": 2
-            },
-            {
-              "comment": "Bu krassovka menga judayom yoqdi. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Toms Edwards",
-              "date": "22/7/22",
-              "userimage":"",
-              "sky_rate": 3
-            },
-
-          ]
-        },
-        {
-          "id": 1,
-          "type": "Road Racing Shoes",
-          "name": "Nike ZoomX Streakfly",
-          "description": "Our lightest racing shoe, the Nike ZoomX Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race.",
-          "image": [
-            {
-              "id": 1,
-              "img": "../src/images/shoes5.png"
-            },
-            {
-              "id": 2,
-              "img": "../src/images/shoes6.png"
-            },
-            {
-              "id": 3,
-              "img": "../src/images/shoes7.png"
-            },
-            {
-              "id": 4,
-              "img": "../src/images/shoes8.png"
-            },
-          ],
-          "cost": 213,
-          "size": [38, 40, 42, 44],
-          "model": ["small", "large"],
-          "add_bag": false,
-          "add_wishlist": false,
-          "reviwes": 13, 
-          "sky_rate_result": 3.2,
-          "coments": [
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Ralph Edwards",
-              "date": "2/10/22",
-              "userimage":"",
-              "sky_rate": 5
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "John Edwards",
-              "date": "8/6/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Julia Edwards",
-              "date": "3/1/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Ajoyib mahsulot sizlarga ham maslahat beraman. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Macs Edwards",
-              "date": "9/12/22",
-              "userimage":"",
-              "sky_rate": 2
-            },
-            {
-              "comment": "Bu krassovka menga judayom yoqdi. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Toms Edwards",
-              "date": "22/7/22",
-              "userimage":"",
-              "sky_rate": 3
-            },
-
-          ]
-        },
-        {
-          "id": 1,
-          "type": "Road Racing Shoes",
-          "name": "Nike ZoomX Streakfly",
-          "description": "Our lightest racing shoe, the Nike ZoomX Streakfly is all about the speed you need to take on the competition in a mile, 5K or 10K race.",
-          "image": [
-            {
-              "id": 1,
-              "img": "../src/images/shoes9.png"
-            },
-            {
-              "id": 2,
-              "img": "../src/images/shoes2.png"
-            },
-            {
-              "id": 3,
-              "img": "../src/images/shoes3.png"
-            },
-            {
-              "id": 4,
-              "img": "../src/images/shoes4.png"
-            },
-          ],
-          "cost": 213,
-          "size": [38, 40, 42, 44],
-          "model": ["small", "large"],
-          "add_bag": false,
-          "add_wishlist": false,
-          "reviwes": 13, 
-          "sky_rate_result": 3.2,
-          "coments": [
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Ralph Edwards",
-              "date": "2/10/22",
-              "userimage":"",
-              "sky_rate": 5
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "John Edwards",
-              "date": "8/6/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Julia Edwards",
-              "date": "3/1/22",
-              "userimage":"",
-              "sky_rate": 4
-            },
-            {
-              "comment": "Ajoyib mahsulot sizlarga ham maslahat beraman. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Macs Edwards",
-              "date": "9/12/22",
-              "userimage":"",
-              "sky_rate": 2
-            },
-            {
-              "comment": "Bu krassovka menga judayom yoqdi. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",
-              "username": "Toms Edwards",
-              "date": "22/7/22",
-              "userimage":"",
-              "sky_rate": 3
-            },
-
-          ]
-        },
-      ]
+      uz: {
+        "mainPage": "Bosh sahifa",
+        "book": "Kitoblar",
+        "searchTitle": "Qidirish",
+        "searchInputPlaceholder": "Adiblar, kitoblar, audiolar, maqolalar...",
+        "searchButton": "Izlash",
+        "categoryTitle": "Asosiy kategoriyalar",
+        "category1": "Temuriylar davri",
+        "category2": "Jadid adabiyoti ",
+        "category3": "Sovet davri ",
+        "category4": "Mustaqillik davri",
+        "profile": "Profile",
+        "addAuthor": "Add author",
+        "addBook": "Add book",
+        "logOut": "Log out",
+        "dataOfBirth": "Tavallud sanasi",
+        "dataOfDead": "Vafot etgan sana",
+        "century": "Asarlari",
+        "seeAll": "Barchasini ko’rish",
+        "pageNumber": "Sahifalar soni:",
+        "page": "varoq",
+        "printDate": "Chop etilgan:",
+        "costBook": "Kitob narxi:",
+        "years": "- yil",
+        "allInformation": "To’liq ma’lumot",
+        "security": "Xavfsizlig",
+        "setting": "Sozlamalar",
+        "myProfile": "Mening profilim",
+        "firstName": "Ism",
+        "firstNameLabel": "Iltimos, ismingizni kiriting.",
+        "lastName": "Familya",
+        "lastNameLabel": "Iltimos, familyangizni kiriting.",
+        "phone": "Telefon nomer", 
+        "phoneLabel": "Iltimos, telefon nomeringizni kiriting",
+        "saveChanges": "O'zgarishlarni saqlash",
+        "changeOrRecover": "Parolingizni o'zgartiring yoki tiklang:",
+        "email": "Email",
+        "emailLabel": "Kechirasiz, emailingizni kiriting.",
+        "password": "Parol",
+        "currentPassword": "Joriy parol",
+        "currentPasswordLabel": "Joriy parolni kiriting",
+        "newPassword": "Yangi parol",
+        "newPasswordLabel": "Yangi parolni kiriting",
+        "language": "Til",
+        "languageLabel": "Tilni tanlang",
+        "theme": "mavzu",
+        "signUp": "Ro'yhatdan o'tish",
+        "alreadyAccount": "Bu hisob allaqachon mavjud",
+        "signIn": "Kirish",
+        "notAccount": "Hisobingiz yo'qmi",
+        "nextStep": "Keyingi qadam",
+        "addFile": "Yuklash uchun faylni ushbu hududga bosing yoki sudrab torting",
+        "title": "Sarlavha",
+        "pageTitle": "Varoq",
+        "year": "Yil",
+        "price": "Narx",
+        "genre": "Janr",
+        "author": "Muallif",
+        "bio": "Malumot",
+        "birthLabel": "Tug'ilgan kun",
+        "deathLabel": "Vafot etgan kun",
+        "country": "Mamlakat",
+        "create": "Yaratish"
+      },
+      eng: {
+      "mainPage": "Main page",
+      "book": "Kitoblar",
+      "searchTitle": "Qidirish",
+      "searchInputPlaceholder": "Adiblar, kitoblar, audiolar, maqolalar...",
+      "searchButton": "Izlash",
+      "categoryTitle": "Main catigory",
+      "category1": "Temuriylar davri",
+      "category2": "Jadid adabiyoti ",
+      "category3": "Sovet davri ",
+      "category4": "Mustaqillik davri",
+      "profile": "Profile",
+      "addAuthor": "Add author",
+      "addBook": "Add book",
+      "logOut": "Log out",
+      "dataOfBirth": "Tavallud sanasi",
+      "dataOfDead": "Vafot etgan sana",
+      "century": "Asarlari",
+      "seeAll": "See all",
+      "pageNumber": "Sahifalar soni:",
+      "page": "pages",
+      "printDate": "Chop etilgan:",
+      "costBook": "Kitob narxi:",
+      "years": "years",
+      "allInformation": "To’liq ma’lumot",
+      "security": "Xavfsizlig",
+      "setting": "Setting",
+      "myProfile": "My profile",
+      "firstName": "First name",
+      "firstNameLabel": "Please, enter your first name.",
+      "lastName": "Nast name",
+      "lastNameLabel": "Please, enter your last name.",
+      "phone": "Phone", 
+      "phoneLabel": "Please, enter your phone name",
+      "saveChanges": "Save changes",
+      "changeOrRecover": "Parolingizni o'zgartiring yoki tiklang:",
+      "email": "Email",
+      "emailLabel": "Please, enter your email name.",
+      "password": "Password",
+      "currentPassword": "Current password",
+      "currentPasswordLabel": "Enter current password",
+      "newPassword": "New password",
+      "newPasswordLabel": "Enter new password",
+      "language": "Language",
+      "languageLabel": "Choose language",
+      "theme": "Theme",
+      "signUp": "Sign Up",
+      "alreadyAccount": "Bu hisob allaqachon mavjud",
+      "signIn": "Sign In",
+      "notAccount": "Hisobingiz yo'qmi",
+      "nextStep": "Next step",
+      "addFile": "Yuklash uchun faylni ushbu hududga bosing yoki sudrab torting",
+      "title": "Sarlavha",
+      "pageTitle": "Varoq",
+      "year": "Yil",
+      "price": "Narx",
+      "genre": "Janr",
+      "author": "Muallif",
+      "bio": "Malumot",
+      "birthLabel": "Tug'ilgan kun",
+      "deathLabel": "Vafot etgan kun",
+      "country": "Mamlakat",
+      "create": "Yaratish"
+      },
+      lang: {},
+      langTheme: false,
+      colorTheme: true,
+      authContent: true,
+      bookContent: false
     }
   },
   mutations: {
-    increment (state) {
-      state.count++
+    uzLanguage(state){
+      state.langTheme = true
+      state.lang = state.uz
     },
-    
-  }
+    engLanguage(state){
+      state.lang = state.eng
+      state.langTheme = false
+    },
+    colorTheme(state){
+      if(!state.colorTheme){
+        document.body.setAttribute("theme", "dark")
+      } else {
+        document.body.setAttribute("theme", "lite")
+      }
+      state.colorTheme = !state.colorTheme
+    },
+    authContent(state){
+      state.authContent = true
+      state.bookContent = false
+    },
+    bookContent(state){
+      state.bookContent = true
+      state.authContent = false
+    }
+  },
 })
 
 export default store

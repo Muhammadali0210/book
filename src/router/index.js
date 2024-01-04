@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Shop from '../views/ShopView.vue'
-import SeeDetails from '../views/SeeDetailsView.vue'
+import Registration from '../components/registration/Register.vue'
+import Login from '../components/registration/Login.vue'
+import AddBook from '../components/add-items/AddBook.vue'
+import AddAuthor from '../components/add-items/AddAuthor.vue'
+import Profile from '../components/profile/ProfilePage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,26 +15,30 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/shop',
-      name: 'shop',
-      component: Shop
+      path: '/register',
+      name: 'register',
+      component: Registration
     },
     {
-      path: '/wishlist',
-      name: 'wishlist',
-      component: () => import('../views/WishlistView.vue')
+      path: '/login',
+      name: 'login',
+      component: Login
     },
     {
-      path: '/orderTraching',
-      name: 'orderTraching',
-      component: () => import('../views/OrderTrackingView.vue')
+      path: '/book',
+      name: 'book',
+      component: AddBook
     },
     {
-      path: '/seeDetails',
-      name: 'seeDetails',
-      component: SeeDetails
+      path: '/author',
+      name: 'author',
+      component: AddAuthor
     },
-
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile
+    }
   ]
 })
 

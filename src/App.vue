@@ -1,27 +1,30 @@
 <template>
-  <Navbar />
+  <RouterLink to="/"></RouterLink>
   <RouterView />
-  <Footer />
 </template>
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import Navbar from './components/constant-component/Navbar.vue'
-import Footer from './components/constant-component/Footer.vue'
 export default{
-  components:{
-    Navbar,
-    Footer
-  },
   data() {
     return {
-      
     }
   },
-  
+  methods: {
+    activeTheme(){
+      this.$store.commit('colorTheme')  
+    },
+    uzLanguage(){
+      this.$store.commit('uzLanguage')
+    },
+  },
+  mounted() {
+    this.activeTheme(),
+    this.uzLanguage()
+  },
 }
-
 </script>
 
 <style scoped>
+
 </style>
