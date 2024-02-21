@@ -8,8 +8,8 @@
                     <li class="cursor" @click="bookContent">{{$store.state.lang.book}}</li>
                 </ul>
                 <div class="language-contrent">
-                    <li class="language-item cursor" @click="uzLanguage" :class="[{active: langtheme}]">UZ</li>
-                    <li class="language-item cursor" @click="engLanguage" :class="[{active: langtheme}]">ENG</li>
+                    <li class="language-item cursor" @click="uzLanguage" :class="[{active: languz}]">UZ</li>
+                    <li class="language-item cursor" @click="engLanguage" :class="[{active: langeng}]">ENG</li>
                 </div>
                 <div class="theme-button cursor" @click="$store.commit('colorTheme')">
                     <img src="../../assets/icons/lite-theme.svg" alt="lite" v-if="!$store.state.colorTheme">
@@ -53,12 +53,6 @@
 <script>
 import {RouterLink} from 'vue-router'
 export default {
-    data() {
-        return {
-            select: false,
-            langtheme: this.$store.state.langTheme,
-        }
-    },
     methods: {
         authContent(){
             this.$store.commit('authContent')
@@ -71,13 +65,22 @@ export default {
         },
         uzLanguage(){
             this.$store.commit('uzLanguage')
-            alert(this.langtheme)
+            this.languz = true
+            this.langeng = false
         },
         engLanguage(){
             this.$store.commit('engLanguage')
-            alert(this.langtheme)
+            this.languz = false
+            this.langeng = true
         }
         
+    },
+    data() {
+        return {
+            select: false,
+            languz: true,
+            langeng: false,
+        }
     }
 }
 </script>
@@ -173,6 +176,7 @@ export default {
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
+    z-index: 11;
 
 }
 .profile-select ul li{
@@ -183,8 +187,17 @@ export default {
 }
 .select-img{
     background-image: url('../../assets/icons/bottom.svg');
-    width: 12px;
-    height: 7px;
-    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-size: 20px 20px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    padding: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 5px #707070;
+    background-color: #fff;
+    /* display: flex; */
+    /* justify-content: start; */
 }
 </style>

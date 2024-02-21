@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="slider-content">
-            <div class="swiper">
+            <div class="swiper" >
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         slide1
@@ -18,11 +18,13 @@
     </div>
 </template>
 <script>
+// import {Swiper} from 'swiper'
 export default {
     methods:{
         mySlider(){
             const swiper = new Swiper('.swiper', {
-                direction: 'vertical',
+                // direction: 'horizontal',
+                effect: "fade",
                 loop: true,
                 pagination: {
                     el: '.swiper-pagination',

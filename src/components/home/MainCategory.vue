@@ -2,7 +2,7 @@
     <div class="container">
         <div class="category-wrap">
             <div class="category-bar">
-                <div class="main-title">Asosiy kategoriyalar</div>
+                <div class="main-title">{{ $store.state.lang.categoryTitle }}</div>
                 <ul class="category-bontent">
                     <li class="category-link cursor">Temuriylar davri </li>
                     <li class="category-link cursor">Jadid adabiyoti </li>

@@ -7,14 +7,14 @@
         </div>
         <div class="form-content">
             <form action="#" class="register-form">
-                <div class="register-title">Sign in</div>
-                <div class="register-label">Do not you have an account? <span class="register-link cursor"><RouterLink to="/register" style="color: #459FFF;">Sign up</RouterLink></span></div>
+                <div class="register-title">{{ $store.state.lang.signIn }}</div>
+                <div class="register-label">{{ $store.state.lang.notAccount }}<span class="register-link cursor"><RouterLink to="/register" style="color: #459FFF;">{{ $store.state.lang.signUp }}</RouterLink></span></div>
                 <div class="form-inputs">
                     <RegistrationInput type="text" name="email" placeholder="Email" />
                     <RegistrationInput type="password" name="password" placeholder="Password" />
                 </div>
                 <RouterLink to="/">
-                    <RegistrationButton>Next Step</RegistrationButton>
+                    <RegistrationButton>{{ $store.state.lang.nextStep }}</RegistrationButton>
                 </RouterLink>
             </form>
         </div>

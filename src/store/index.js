@@ -69,10 +69,10 @@ const store = createStore({
       },
       eng: {
       "mainPage": "Main page",
-      "book": "Kitoblar",
-      "searchTitle": "Qidirish",
+      "book": "Books",
+      "searchTitle": "Search",
       "searchInputPlaceholder": "Adiblar, kitoblar, audiolar, maqolalar...",
-      "searchButton": "Izlash",
+      "searchButton": "Searching",
       "categoryTitle": "Main catigory",
       "category1": "Temuriylar davri",
       "category2": "Jadid adabiyoti ",
@@ -132,7 +132,8 @@ const store = createStore({
       "create": "Yaratish"
       },
       lang: {},
-      langTheme: false,
+      // languz: true,
+      // langeng: false,
       colorTheme: true,
       authContent: true,
       bookContent: false
@@ -140,12 +141,14 @@ const store = createStore({
   },
   mutations: {
     uzLanguage(state){
-      state.langTheme = true
+      // state.languz = true
+      // state.langeng = false
       state.lang = state.uz
     },
     engLanguage(state){
+      // state.langeng = 1
       state.lang = state.eng
-      state.langTheme = false
+      // state.languz = 0
     },
     colorTheme(state){
       if(!state.colorTheme){

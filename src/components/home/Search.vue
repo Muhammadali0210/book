@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="search-wrap">
-            <div class="search-title">Qidirish</div>
+            <div class="search-title">{{ $store.state.lang.searchTitle }}</div>
             <div class="search-contemt">
-                <input type="text" class="search-input" placeholder="Adiblar, kitoblar, audiolar, maqolalar...">
+                <input type="text" class="search-input" :placeholder="$store.state.lang.searchInputPlaceholder">
                 <div class="search-button cursor">
                     <div class="search-icon"></div>
-                    <div class="search-text">Izlash</div>
+                    <div class="search-text">{{$store.state.lang.searchButton}}</div>
                 </div>
             </div>
         </div>

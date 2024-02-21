@@ -7,8 +7,8 @@
         </div>
         <div class="form-content">
             <form action="#" class="register-form">
-                <div class="register-title">Sign up</div>
-                <div class="register-label">Already have an account? <span class="register-link cursor"><RouterLink to="/login" style="color: #459FFF;">Sign in</RouterLink></span></div>
+                <div class="register-title">{{ $store.state.lang.signUp }}</div>
+                <div class="register-label">{{ $store.state.lang.alreadyAccount }}<span class="register-link cursor"><RouterLink to="/login" style="color: #459FFF;">{{ $store.state.lang.signIn }}</RouterLink></span></div>
                 <div class="form-inputs">
                     <RegistrationInput type="text" name="firstName" placeholder="First Name" />
                     <RegistrationInput type="text" name="lastName" placeholder="Last Name" />
@@ -16,7 +16,7 @@
                     <RegistrationInput type="text" name="email" placeholder="Email" />
                     <RegistrationInput type="password" name="password" placeholder="Password" />
                 </div>
-                <RegistrationButton>Next Step</RegistrationButton>
+                <RegistrationButton>{{ $store.state.lang.nextStep }}</RegistrationButton>
             </form>
         </div>
     </div>
